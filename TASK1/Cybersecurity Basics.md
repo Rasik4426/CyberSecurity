@@ -1,4 +1,4 @@
-# Task 1: Cybersecurity Basics
+#  Cybersecurity Basics
 
 ## Objective
 
