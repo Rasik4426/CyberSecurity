@@ -3,15 +3,15 @@
 Date: 02-06-2026
 Scanner: Kali Linux
 Target: Metasploitable2
-Target IP: 192.168.56.101
+Target IP: 192.168.56.104
 
 ## Command Used:
 
-sudo nmap -sS -sV -O -A 192.168.56.101 -oN nmap_report.txt
+sudo nmap -sS -sV -O -A 192.168.56.104 -oN nmap_report.txt
 
 ## Scan Results
 
-Nmap scan report for 192.168.56.101
+Nmap scan report for 192.168.56.104
 Host is up (0.00045s latency).
 
 PORT      STATE SERVICE     VERSION
