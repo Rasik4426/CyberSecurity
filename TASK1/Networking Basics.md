@@ -1,96 +1,222 @@
-**4. Networking Basics**
+#  Networking Basics
 
+## Objective
 
+To understand the fundamental concepts of computer networking, including the OSI model, TCP/IP protocol suite, DNS, HTTP/HTTPS, IP addressing, subnetting, and NAT.
 
-OSI Model
+---
 
-The Open Systems Interconnection (OSI) model is a conceptual framework that describes how data travels through a network.
+## Introduction
 
-The seven layers are:
+Networking is the process of connecting computers and devices to share data and resources. Understanding networking fundamentals is essential for cybersecurity professionals because most cyberattacks occur over networks.
 
-Physical Layer
+---
 
-Data Link Layer
+## 1. OSI Model (Open Systems Interconnection)
 
-Network Layer
+The OSI Model is a conceptual framework that explains how data is transmitted between devices over a network. It consists of seven layers, where each layer performs specific functions and communicates with the layers directly above and below it.
 
-Transport Layer
+### OSI Layers
 
-Session Layer
+| Layer No. | Layer Name   | Function                                             |
+| --------- | ------------ | ---------------------------------------------------- |
+| 7         | Application  | Provides services to end-user applications           |
+| 6         | Presentation | Handles data formatting, encryption, and compression |
+| 5         | Session      | Establishes and manages communication sessions       |
+| 4         | Transport    | Ensures reliable data transfer                       |
+| 3         | Network      | Handles routing and logical addressing               |
+| 2         | Data Link    | Provides node-to-node communication                  |
+| 1         | Physical     | Transmits raw bits over physical media               |
 
-Presentation Layer
+### Key Points
 
-Application Layer
+* The OSI model contains 7 layers.
+* Each layer has a specific responsibility.
+* It helps in troubleshooting network-related issues.
 
+---
 
+## 2. TCP/IP Protocol Suite
 
-Each layer performs specific functions and communicates with adjacent layers.
+The TCP/IP model is the practical networking model used on the Internet. It defines how data is transmitted between devices.
 
+### TCP/IP Layers
 
+| Layer          | Function                           |
+| -------------- | ---------------------------------- |
+| Application    | User-facing protocols and services |
+| Transport      | End-to-end communication           |
+| Internet       | Routing and addressing             |
+| Network Access | Physical network communication     |
 
-TCP/IP Protocol Suite
+### Common Protocols
 
+| Protocol | Purpose                  |
+| -------- | ------------------------ |
+| HTTP     | Web communication        |
+| HTTPS    | Secure web communication |
+| DNS      | Domain name resolution   |
+| TCP      | Reliable data transfer   |
+| UDP      | Fast data transfer       |
+| IP       | Addressing and routing   |
 
+### Key Points
 
-The TCP/IP model is the practical networking model used on the Internet.
+* TCP/IP is the foundation of the Internet.
+* It consists of 4 layers.
+* Most modern networks use the TCP/IP model.
 
+---
 
+## 3. DNS (Domain Name System)
 
-The four layers are:
+DNS is a system that translates human-readable domain names into IP addresses.
 
+### Example
 
+Domain Name:
+google.com
 
-Application Layer
+IP Address:
+142.250.xxx.xxx
 
-Transport Layer
+### Benefits
 
-Internet Layer
+* Easy website access using names instead of numbers.
+* Faster navigation on the Internet.
+* Supports large-scale internet communication.
 
-Network Access Layer
+### Key Points
 
-DNS
+* DNS acts like the Internet's phonebook.
+* Converts domain names into IP addresses.
+* Essential for browsing websites.
 
+---
 
+## 4. HTTP and HTTPS
 
-The Domain Name System (DNS) converts human-readable domain names into IP addresses, allowing users to access websites using names instead of numerical addresses.
+### HTTP (HyperText Transfer Protocol)
 
+HTTP is a protocol used for communication between web browsers and web servers.
 
+**Characteristics:**
 
-HTTP and HTTPS
+* Data is transmitted in plain text.
+* Less secure.
+* Uses Port 80.
 
+### HTTPS (HyperText Transfer Protocol Secure)
 
+HTTPS is the secure version of HTTP that uses SSL/TLS encryption.
 
-HTTP (HyperText Transfer Protocol) is used for communication between web browsers and servers. HTTPS is the secure version of HTTP and uses SSL/TLS encryption to protect transmitted data.
+**Characteristics:**
 
+* Data is encrypted.
+* More secure.
+* Uses Port 443.
 
+### HTTP vs HTTPS
 
-IP Addressing
+| Feature         | HTTP | HTTPS |
+| --------------- | ---- | ----- |
+| Security        | Low  | High  |
+| Encryption      | No   | Yes   |
+| Port            | 80   | 443   |
+| Data Protection | No   | Yes   |
 
+### Key Points
 
+* HTTPS protects user data during transmission.
+* Most modern websites use HTTPS.
+* SSL/TLS certificates enable secure communication.
 
-An IP address uniquely identifies a device on a network.
+---
 
+## 5. IP Addressing
 
+An IP Address is a unique identifier assigned to a device connected to a network.
 
-Types of IP addresses:
+### Types of IP Addresses
 
+#### IPv4
 
+* 32-bit address.
+* Example: 192.168.1.1
 
-IPv4
+#### IPv6
 
-IPv6
+* 128-bit address.
+* Example: 2001:db8::1
 
-Subnetting
+### Importance
 
+* Identifies devices on a network.
+* Enables communication between systems.
+* Supports internet connectivity.
 
+---
 
-Subnetting is the process of dividing a large network into smaller networks to improve performance and security.
+## 6. Subnetting
 
+Subnetting is the process of dividing a large network into smaller and manageable networks called subnets.
 
+### Advantages
 
-NAT (Network Address Translation)
+* Improves network performance.
+* Enhances security.
+* Reduces network congestion.
+* Simplifies network management.
 
+### Example
 
+Network:
+192.168.1.0/24
 
-NAT allows multiple devices on a private network to share a single public IP address while accessing the internet.
+Possible Subnets:
 
+* 192.168.1.0/26
+* 192.168.1.64/26
+* 192.168.1.128/26
+* 192.168.1.192/26
+
+### Key Points
+
+* Subnetting divides large networks.
+* Improves efficiency and security.
+* Widely used in enterprise environments.
+
+---
+
+## 7. NAT (Network Address Translation)
+
+NAT is a networking technique that allows multiple devices on a private network to share a single public IP address.
+
+### Working of NAT
+
+1. A device sends a request to the Internet.
+2. The router replaces the private IP address with its public IP address.
+3. The response is received by the router.
+4. The router forwards the response to the correct device.
+
+### Advantages
+
+* Conserves public IP addresses.
+* Improves network security.
+* Allows multiple devices to access the Internet simultaneously.
+
+### Example
+
+Private IP:
+192.168.1.10
+
+Public IP:
+103.25.50.100
+
+The router translates the private address into the public address before sending traffic to the Internet.
+
+---
+
+## Conclusion
+
+Networking forms the backbone of cybersecurity. Understanding the OSI model, TCP/IP, DNS, HTTP/HTTPS, IP addressing, subnetting, and NAT provides a strong foundation for advanced cybersecurity topics such as network security, penetration testing, traffic analysis, and ethical hacking.
