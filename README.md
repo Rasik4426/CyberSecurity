@@ -179,7 +179,7 @@ A quick reference guide for commonly used Linux commands during cybersecurity an
 
 **Rasikraj**
 B.Tech Computer Science and Engineering (Cybersecurity Enthusiast)
-
+ VIDEO LINK: https://www.canva.com/design/DAHLbHT1nX8/r33jgLStBE9JGyliGIGX5A/watch
 ---
 
 # Disclaimer
