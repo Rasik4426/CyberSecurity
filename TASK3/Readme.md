@@ -1,1 +1,148 @@
+# OWASP-DVWA-Security-Testing
+
+## 📌 Project Overview
+
+This project demonstrates the identification, analysis, and mitigation of common OWASP Top 10 web application vulnerabilities using DVWA (Damn Vulnerable Web Application) in a controlled Kali Linux laboratory environment.
+
+## 🎯 Objectives
+
+* Understand OWASP Top 10 vulnerabilities.
+* Perform vulnerability assessment in a safe lab environment.
+* Learn attack methodology and security impacts.
+* Implement and document mitigation techniques.
+* Generate professional security testing reports.
+
+---
+
+## 🛠️ Lab Environment
+
+| Component              | Details                     |
+| ---------------------- | --------------------------- |
+| Operating System       | Kali Linux                  |
+| Vulnerable Application | DVWA                        |
+| Web Server             | Apache2                     |
+| Database               | MariaDB                     |
+| Browser                | Firefox                     |
+| Security Tools         | Burp Suite, Nmap, Wireshark |
+
+---
+
+## 📂 Repository Structure
+
+```text
+OWASP-DVWA-Security-Testing/
+│
+├── README.md
+│
+├── report/
+│   └── Security_Testing_Report.pdf
+│
+├── screenshots/
+│   ├── SQL_Injection/
+│   │   ├── sqli_1_security_low.png
+│   │   ├── sqli_2_normal_query.png
+│   │   └── sqli_3_result.png
+│   │
+│   ├── XSS/
+│   │   ├── stored_xss_1.png
+│   │   ├── stored_xss_2.png
+│   │   ├── reflected_xss_1.png
+│   │   └── reflected_xss_2.png
+│   │
+│   └── CSRF/
+│       ├── csrf_1.png
+│       ├── csrf_2.png
+│       └── csrf_3.png
+│
+├── mitigation_notes/
+│   ├── SQL_Injection.md
+│   ├── XSS.md
+│   └── CSRF.md
+│
+├── video_demo/
+│   └── demo_script.txt
+│
+└── resources/
+    ├── dvwa_setup_guide.md
+    └── references.md
+```
+
+---
+
+# Vulnerabilities Covered
+
+## 1. SQL Injection (SQLi)
+
+### Description
+
+SQL Injection occurs when untrusted input is incorporated into SQL queries without proper validation.
+
+### Impact
+
+* Data Disclosure
+* Authentication Bypass
+* Database Manipulation
+
+### Mitigation
+
+* Prepared Statements
+* Parameterized Queries
+* Input Validation
+
+---
+
+## 2. Cross-Site Scripting (XSS)
+
+### Description
+
+XSS allows attackers to inject malicious scripts into web pages viewed by other users.
+
+### Types
+
+* Stored XSS
+* Reflected XSS
+
+### Impact
+
+* Session Hijacking
+* Credential Theft
+* Browser Manipulation
+
+### Mitigation
+
+* Output Encoding
+* Content Security Policy (CSP)
+* Input Validation
+
+---
+
+## 3. Cross-Site Request Forgery (CSRF)
+
+### Description
+
+CSRF tricks authenticated users into performing unintended actions.
+
+### Impact
+
+* Unauthorized Password Changes
+* Account Manipulation
+* Unauthorized Transactions
+
+### Mitigation
+
+* Anti-CSRF Tokens
+* SameSite Cookies
+* Origin Validation
+
+---
+
+## 📊 Results
+
+Successfully demonstrated multiple OWASP Top 10 vulnerabilities in a controlled DVWA environment and documented corresponding mitigation techniques.
+
+---
+
+## ⚠️ Disclaimer
+
+This project was conducted strictly within an authorized educational laboratory environment using DVWA. The purpose of this repository is educational and defensive security learning only.
 
